@@ -1,0 +1,64 @@
+{
+  "name": "testnextjs",
+  "version": "1.0.0",
+  "description": "Test Assignment for Front-End Developer",
+  "author": "me",
+  "engines": {
+    "pnpm": ">=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrese22/testnextjs"
+  },
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.4",
+    "prop-types": "^15.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@btmills/prettier": "^3.3.3",
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.16.0",
+    "@next/eslint-plugin-next": "^15.0.4",
+    "@stylistic/eslint-plugin-js": "^2.11.0",
+    "axios": "^1.7.9",
+    "classnames": "^2.5.1",
+    "eslint": "^9.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "postcss-styl": "^0.12.3",
+    "prettier": "^3.4.2",
+    "sass": "^1.82.0",
+    "sass-embedded": "^1.82.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.10.0",
+    "terser": "^5.37.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.3"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/andrese22/testnextjs"
+  }
+}

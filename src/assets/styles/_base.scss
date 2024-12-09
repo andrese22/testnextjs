@@ -1,0 +1,145 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: $color;
+  background-color: $bg-color;
+  font-family: 'GT Walsheim';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 8px;
+}
+
+.page {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 100vh;
+  max-width: calc(100vw - 240px);
+  width: 100%;
+  padding: 0 0 0 20px;
+  overflow-y: auto;
+
+  &-dashboard {
+    position: sticky;
+    padding: 20px 0 12px;
+    top: 0;
+    background-color: $bg-color;
+    z-index: 1;
+
+    &-form {
+      &-fieldset {
+        display: block;
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        &-label {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 16px 0 0;
+
+          &__input {
+            margin: 0 0 0 8px;
+          }
+        }
+      }
+    }
+
+    &__h1 {
+      margin: 0 0 24px;
+    }
+  }
+
+  &--loading {
+    opacity: 0.5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+  }
+}
+
+.navLinks {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100vh;
+  max-width: 200px;
+  width: 100%;
+  background-color: #003d4f;
+  text-align: left;
+
+  &__item {
+    display: block;
+    margin: 24px 32px 0 24px;
+    font-size: 20px;
+    color: #f6f6ff;
+    text-decoration: none;
+
+    &--active {
+      color: #ffffff;
+    }
+  }
+}
+
+.pressRelease {
+  padding: 16px 0;
+
+  &-item {
+    max-width: 440px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px #0000001a;
+
+    &-title {
+      &-group {
+        margin: 0 0 12px;
+
+        &__header {
+          margin: 0 0 4px;
+        }
+
+        &__text {
+          margin: 0;
+        }
+      }
+      &::marker {
+        display: none;
+      }
+    }
+  }
+}

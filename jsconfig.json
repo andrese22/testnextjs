@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "baseUrl": "src/",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/app/*": ["app/*"],
+      "@/containers/*": ["containers/*"],
+      "@/components/*": ["components/*"],
+      "@/consts/*": ["consts/*"],
+      "@/assets/*": ["assets/*"],
+      "@/utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/node_modules/*", "./public"]
+}

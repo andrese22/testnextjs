@@ -1,0 +1,55 @@
+.pressRelease {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  grid-gap: 20px;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+
+  &-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 440px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px #0000001a;
+
+    &-title {
+      list-style: none;
+
+      &-group {
+        margin: 0 0 12px;
+
+        &__header {
+          margin: 0 0 4px;
+        }
+
+        &__text {
+          margin: 0;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &__img {
+      display: block;
+      border-radius: 40px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}

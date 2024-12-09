@@ -1,0 +1,56 @@
+.button {
+  display: block;
+  min-height: 40px;
+  max-width: 200px;
+  line-height: 22px;
+  padding: 9px 26px;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'GT Walsheim';
+  color: $btn-default-color;
+  background-color: $btn-default-bg-color;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  &--large {
+    min-height: 48px;
+    line-height: 26px;
+    padding: 11px 32px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+
+  &--small {
+    min-height: 34px;
+    line-height: 20px;
+    padding: 7px 22px;
+    font-size: 14px;
+  }
+
+  &--tiny {
+    min-height: 28px;
+    line-height: 26px;
+    padding: 6px 18px;
+    font-size: 13px;
+  }
+
+  &--bottom {
+    margin: 0 auto 20px;
+  }
+
+  &:hover {
+    background-color: $btn-default-state-bg-color;
+  }
+
+  &:focus {
+    background-color: $btn-default-state-bg-color;
+    border: 1px dotted $btn-default-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
